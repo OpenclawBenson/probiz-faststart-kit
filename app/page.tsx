@@ -53,40 +53,30 @@ export default function Home() {
             
             {/* Right: Image Collage Style */}
             <div className="relative">
-              <div className="bg-gradient-to-br from-orange-100 to-orange-50 rounded-2xl p-6 relative overflow-hidden">
-                {/* Main Feature Box */}
-                <div className="bg-white rounded-xl shadow-lg p-6 mb-4">
-                  <div className="text-orange-500 text-sm font-semibold mb-2">PROBIZ FASTSTART KIT</div>
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">Everything You Need to</h3>
-                  <h3 className="text-2xl font-bold text-orange-500 mb-4">Recruit Your First Contractor</h3>
-                  <div className="flex items-center gap-2 text-sm text-gray-600">
-                    <span className="bg-green-100 text-green-700 px-2 py-1 rounded">✓ 10 Email Templates</span>
-                    <span className="bg-blue-100 text-blue-700 px-2 py-1 rounded">✓ Scripts</span>
-                  </div>
+              <div className="grid grid-cols-2 gap-3">
+                <div className="space-y-3">
+                  <img 
+                    src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=400&h=300&fit=crop" 
+                    alt="Business professional working" 
+                    className="rounded-xl shadow-lg w-full h-40 object-cover"
+                  />
+                  <img 
+                    src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=400&h=300&fit=crop" 
+                    alt="Team collaboration" 
+                    className="rounded-xl shadow-lg w-full h-48 object-cover"
+                  />
                 </div>
-                
-                {/* Floating Cards */}
-                <div className="grid grid-cols-2 gap-3">
-                  <div className="bg-white rounded-lg shadow-md p-4 transform rotate-2">
-                    <div className="text-3xl mb-2">📧</div>
-                    <div className="text-sm font-semibold text-gray-800">Email Swipes</div>
-                    <div className="text-xs text-gray-500">Copy & Paste Ready</div>
-                  </div>
-                  <div className="bg-white rounded-lg shadow-md p-4 transform -rotate-1">
-                    <div className="text-3xl mb-2">🎯</div>
-                    <div className="text-sm font-semibold text-gray-800">Scripts</div>
-                    <div className="text-xs text-gray-500">Word-for-Word</div>
-                  </div>
-                  <div className="bg-white rounded-lg shadow-md p-4 transform -rotate-2">
-                    <div className="text-3xl mb-2">📱</div>
-                    <div className="text-sm font-semibold text-gray-800">Social Posts</div>
-                    <div className="text-xs text-gray-500">20 Templates</div>
-                  </div>
-                  <div className="bg-white rounded-lg shadow-md p-4 transform rotate-1">
-                    <div className="text-3xl mb-2">📊</div>
-                    <div className="text-sm font-semibold text-gray-800">Tracker</div>
-                    <div className="text-xs text-gray-500">Never Lose Leads</div>
-                  </div>
+                <div className="space-y-3 pt-6">
+                  <img 
+                    src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop" 
+                    alt="Business meeting" 
+                    className="rounded-xl shadow-lg w-full h-48 object-cover"
+                  />
+                  <img 
+                    src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=400&h=300&fit=crop" 
+                    alt="Handshake deal" 
+                    className="rounded-xl shadow-lg w-full h-40 object-cover"
+                  />
                 </div>
               </div>
             </div>
@@ -96,45 +86,55 @@ export default function Home() {
 
       {/* Problem Section - Clean Style */}
       <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-6xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center text-gray-900">
             The Real Problem Isn&apos;t ProBiz.<br />
             <span className="text-orange-500">It&apos;s the Starting Line.</span>
           </h2>
           
-          <div className="bg-white rounded-2xl shadow-sm p-8 mb-8">
-            <div className="grid md:grid-cols-3 gap-6 mb-8">
-              <div className="text-center p-4">
-                <div className="text-4xl mb-3">💰</div>
-                <h3 className="font-semibold text-gray-900 mb-1">Recurring Income</h3>
-                <p className="text-gray-500 text-sm">$20-40/month per contractor</p>
+          <div className="grid md:grid-cols-2 gap-8 items-center mb-8">
+            <div className="bg-white rounded-2xl shadow-sm p-8">
+              <div className="grid grid-cols-3 gap-4 mb-8">
+                <div className="text-center p-4">
+                  <div className="text-4xl mb-3">💰</div>
+                  <h3 className="font-semibold text-gray-900 mb-1 text-sm">Recurring Income</h3>
+                  <p className="text-gray-500 text-xs">$20-40/month per contractor</p>
+                </div>
+                <div className="text-center p-4">
+                  <div className="text-4xl mb-3">🏠</div>
+                  <h3 className="font-semibold text-gray-900 mb-1 text-sm">Work From Home</h3>
+                  <p className="text-gray-500 text-xs">Build your network remotely</p>
+                </div>
+                <div className="text-center p-4">
+                  <div className="text-4xl mb-3">📈</div>
+                  <h3 className="font-semibold text-gray-900 mb-1 text-sm">Passive Growth</h3>
+                  <p className="text-gray-500 text-xs">Network grows while you sleep</p>
+                </div>
               </div>
-              <div className="text-center p-4">
-                <div className="text-4xl mb-3">🏠</div>
-                <h3 className="font-semibold text-gray-900 mb-1">Work From Home</h3>
-                <p className="text-gray-500 text-sm">Build your network remotely</p>
-              </div>
-              <div className="text-center p-4">
-                <div className="text-4xl mb-3">📈</div>
-                <h3 className="font-semibold text-gray-900 mb-1">Passive Growth</h3>
-                <p className="text-gray-500 text-sm">Network grows while you sleep</p>
+
+              <div className="border-t pt-6">
+                <p className="text-base mb-4 text-gray-700 text-center">
+                  You log in. You see the dashboard. You understand the concept.
+                </p>
+                <p className="text-base mb-4 text-gray-700 text-center">
+                  But when it&apos;s time to actually recruit your first contractor?
+                </p>
+                <p className="text-3xl font-bold text-orange-500 text-center mb-4">
+                  Crickets.
+                </p>
+                <p className="text-gray-600 text-center text-sm">
+                  You don&apos;t know what to say. You don&apos;t know where to find them. 
+                  You don&apos;t want to sound salesy or desperate.
+                </p>
               </div>
             </div>
-
-            <div className="border-t pt-8">
-              <p className="text-lg mb-4 text-gray-700 text-center">
-                You log in. You see the dashboard. You understand the concept.
-              </p>
-              <p className="text-lg mb-6 text-gray-700 text-center">
-                But when it&apos;s time to actually recruit your first contractor?
-              </p>
-              <p className="text-4xl font-bold text-orange-500 text-center mb-6">
-                Crickets.
-              </p>
-              <p className="text-gray-600 text-center max-w-xl mx-auto">
-                You don&apos;t know what to say. You don&apos;t know where to find them. 
-                You don&apos;t want to sound salesy or desperate.
-              </p>
+            
+            <div className="relative">
+              <img 
+                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600&h=500&fit=crop" 
+                alt="Person confused at computer" 
+                className="rounded-2xl shadow-lg w-full h-80 object-cover"
+              />
             </div>
           </div>
         </div>
@@ -196,15 +196,26 @@ export default function Home() {
       {/* The Offer - Clean Style */}
       <section id="what-you-get" className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">
-            Introducing: The ProBiz FastStart Kit
-          </h2>
-          <p className="text-lg mb-4 text-orange-600 text-center font-medium">
-            This isn&apos;t theory. This isn&apos;t &quot;motivational advice.&quot;
-          </p>
-          <p className="text-lg mb-10 text-gray-600 text-center max-w-3xl mx-auto">
-            This is the <strong className="text-gray-900">actual recruiting system</strong> that top ProBiz members used to get their first contractors fast—including the exact words they used, the templates they copied, and the sequence they followed.
-          </p>
+          <div className="grid md:grid-cols-2 gap-8 items-center mb-10">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+                Introducing: The ProBiz FastStart Kit
+              </h2>
+              <p className="text-lg mb-4 text-orange-600 font-medium">
+                This isn&apos;t theory. This isn&apos;t &quot;motivational advice.&quot;
+              </p>
+              <p className="text-lg text-gray-600">
+                This is the <strong className="text-gray-900">actual recruiting system</strong> that top ProBiz members used to get their first contractors fast—including the exact words they used, the templates they copied, and the sequence they followed.
+              </p>
+            </div>
+            <div>
+              <img 
+                src="https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=600&h=400&fit=crop" 
+                alt="Happy business team" 
+                className="rounded-2xl shadow-lg w-full h-64 object-cover"
+              />
+            </div>
+          </div>
 
           <h3 className="text-2xl font-bold mb-8 text-center text-orange-500">Here&apos;s What You Get:</h3>
 
