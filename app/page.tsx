@@ -1,189 +1,232 @@
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
+      {/* Navigation */}
+      <nav className="bg-white shadow-sm py-4 px-6">
+        <div className="max-w-6xl mx-auto flex justify-between items-center">
+          <div className="text-2xl font-bold text-orange-500">
+            ProBiz FastStart
+          </div>
+          <div className="hidden md:flex space-x-8 text-gray-600">
+            <a href="#what-you-get" className="hover:text-orange-500 transition">What You Get</a>
+            <a href="#how-it-works" className="hover:text-orange-500 transition">How It Works</a>
+            <a href="#guarantee" className="hover:text-orange-500 transition">Guarantee</a>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
-      <section className="bg-black text-white py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 uppercase tracking-tight">
-            YOU&apos;RE ALREADY BEHIND.
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-24 px-4">
+        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1920&h=1080&fit=crop')] bg-cover bg-center opacity-20"></div>
+        <div className="relative max-w-4xl mx-auto text-center">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+            Your Complete Guide to<br />
+            <span className="text-orange-400">Recruiting Contractors</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 text-gray-300">
-            The top ProBiz members recruited their first contractor in week one—while most new members are still &quot;getting organized.&quot;
+          <p className="text-lg md:text-xl mb-4 text-orange-300 font-medium">
+            Beyond Guesswork | Proven Templates | Real Results
           </p>
-          <p className="text-lg md:text-xl mb-12 text-gray-400">
-            <strong className="text-white">The FastStart Kit gives you the exact emails, scripts, and templates they used</strong>—so you can skip the learning curve and start earning $20-40/month per contractor faster than 90% of new members.
+          <p className="text-base md:text-lg mb-8 text-gray-300 max-w-2xl mx-auto leading-relaxed">
+            Hey! I&apos;m Nicky, your ProBiz insider who went from zero to 12 contractors in 6 months. 
+            Let me show you the exact system that works—from the first email to your first signup, 
+            and everything that actually gets contractors to say YES.
           </p>
-          <p className="text-sm text-gray-500 mb-8">
-            Built from the actual recruiting system that helped one member sign 5 contractors in 14 days.
-          </p>
-          <a 
-            href="#offer" 
-            className="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg text-xl uppercase tracking-wide transition-colors"
-          >
-            Get The FastStart Kit — $37
-          </a>
-          <p className="text-xs text-gray-600 mt-4">
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <a 
+              href="#offer" 
+              className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all shadow-lg hover:shadow-xl"
+            >
+              Get The Kit — $37
+            </a>
+            <a 
+              href="#what-you-get" 
+              className="inline-block bg-blue-500 hover:bg-blue-600 text-white font-semibold py-4 px-8 rounded-lg text-lg transition-all shadow-lg hover:shadow-xl"
+            >
+              See What&apos;s Inside
+            </a>
+          </div>
+          <p className="text-xs text-gray-400 mt-6">
             Instant download • 30-day guarantee • No subscription
           </p>
         </div>
       </section>
 
       {/* Problem Section */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
-            The Real Problem Isn&apos;t ProBiz. It&apos;s the Starting Line.
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-slate-800">
+            The Real Problem Isn&apos;t ProBiz.<br />
+            <span className="text-orange-500">It&apos;s the Starting Line.</span>
           </h2>
-          <p className="text-lg mb-6 text-gray-700">
-            You joined ProBiz because you saw the vision:
-          </p>
-          <ul className="list-none space-y-3 mb-8">
-            <li className="flex items-start">
-              <span className="text-green-600 mr-2">✓</span>
-              <span>Recurring income from home</span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-green-600 mr-2">✓</span>
-              <span>$20-40/month per contractor</span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-green-600 mr-2">✓</span>
-              <span>Build a network that grows while you sleep</span>
-            </li>
-          </ul>
-          <p className="text-lg mb-6 text-gray-700">
-            But then reality hits...
-          </p>
-          <p className="text-lg mb-6 text-gray-700">
-            You log in. You see the dashboard. You understand the <em>concept</em>.
-          </p>
-          <p className="text-lg mb-6 text-gray-700">
-            But when it&apos;s time to actually recruit your first contractor?
-          </p>
-          <p className="text-2xl font-bold text-red-600 mb-6">
-            Crickets.
-          </p>
-          <p className="text-lg text-gray-700">
-            You don&apos;t know what to say. You don&apos;t know where to find them. You don&apos;t want to sound salesy or desperate.
-          </p>
+          
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="bg-slate-50 p-6 rounded-xl text-center">
+              <div className="text-4xl mb-4">💰</div>
+              <h3 className="font-semibold text-slate-800 mb-2">Recurring Income</h3>
+              <p className="text-gray-600 text-sm">$20-40/month per contractor</p>
+            </div>
+            <div className="bg-slate-50 p-6 rounded-xl text-center">
+              <div className="text-4xl mb-4">🏠</div>
+              <h3 className="font-semibold text-slate-800 mb-2">Work From Home</h3>
+              <p className="text-gray-600 text-sm">Build your network remotely</p>
+            </div>
+            <div className="bg-slate-50 p-6 rounded-xl text-center">
+              <div className="text-4xl mb-4">📈</div>
+              <h3 className="font-semibold text-slate-800 mb-2">Passive Growth</h3>
+              <p className="text-gray-600 text-sm">Network grows while you sleep</p>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-orange-50 to-blue-50 p-8 rounded-2xl">
+            <p className="text-lg mb-4 text-slate-700 text-center">
+              You log in. You see the dashboard. You understand the concept.
+            </p>
+            <p className="text-lg mb-6 text-slate-700 text-center">
+              But when it&apos;s time to actually recruit your first contractor?
+            </p>
+            <p className="text-3xl font-bold text-orange-500 text-center mb-6">
+              Crickets.
+            </p>
+            <p className="text-gray-600 text-center max-w-xl mx-auto">
+              You don&apos;t know what to say. You don&apos;t know where to find them. 
+              You don&apos;t want to sound salesy or desperate.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* What Separates Top 10% */}
-      <section className="py-16 px-4">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+      <section id="how-it-works" className="py-20 px-4 bg-slate-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center text-slate-800">
             What Separates the Top 10% from Everyone Else?
           </h2>
-          <p className="text-lg mb-6 text-gray-700">
+          <p className="text-lg mb-12 text-gray-600 text-center max-w-2xl mx-auto">
             I studied the ProBiz members who hit the ground running—the ones who recruited 3, 5, even 10 contractors in their first month.
           </p>
-          <p className="text-lg mb-6 text-gray-700">
-            They weren&apos;t smarter. They didn&apos;t have special connections. They weren&apos;t &quot;natural salespeople.&quot;
-          </p>
-          <p className="text-2xl font-bold text-center mb-8 text-black">
-            They simply had a system.
-          </p>
-          <p className="text-lg mb-6 text-gray-700">
-            While everyone else was figuring it out from scratch, they were following a proven recruiting playbook:
-          </p>
-          <ul className="space-y-4 mb-8">
-            <li className="flex items-start">
-              <span className="text-blue-600 mr-3 text-xl">→</span>
-              <span>The exact email that gets contractors to reply</span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-blue-600 mr-3 text-xl">→</span>
-              <span>The conversation script that turns interest into signups</span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-blue-600 mr-3 text-xl">→</span>
-              <span>The social media posts that attract local businesses</span>
-            </li>
-            <li className="flex items-start">
-              <span className="text-blue-600 mr-3 text-xl">→</span>
-              <span>The tracking system that keeps follow-ups from falling through the cracks</span>
-            </li>
-          </ul>
-          <p className="text-lg font-semibold text-center text-gray-800">
+
+          <div className="bg-white p-8 rounded-2xl shadow-lg mb-12">
+            <p className="text-2xl font-bold text-center mb-8 text-slate-800">
+              They simply had a <span className="text-orange-500">system</span>.
+            </p>
+            
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="flex items-start p-4 bg-orange-50 rounded-xl">
+                <span className="text-orange-500 mr-4 text-2xl">✉️</span>
+                <div>
+                  <h4 className="font-semibold text-slate-800 mb-1">The Exact Email</h4>
+                  <p className="text-gray-600 text-sm">That gets contractors to reply</p>
+                </div>
+              </div>
+              <div className="flex items-start p-4 bg-blue-50 rounded-xl">
+                <span className="text-blue-500 mr-4 text-2xl">📝</span>
+                <div>
+                  <h4 className="font-semibold text-slate-800 mb-1">The Conversation Script</h4>
+                  <p className="text-gray-600 text-sm">That turns interest into signups</p>
+                </div>
+              </div>
+              <div className="flex items-start p-4 bg-green-50 rounded-xl">
+                <span className="text-green-500 mr-4 text-2xl">📱</span>
+                <div>
+                  <h4 className="font-semibold text-slate-800 mb-1">Social Media Posts</h4>
+                  <p className="text-gray-600 text-sm">That attract local businesses</p>
+                </div>
+              </div>
+              <div className="flex items-start p-4 bg-purple-50 rounded-xl">
+                <span className="text-purple-500 mr-4 text-2xl">📊</span>
+                <div>
+                  <h4 className="font-semibold text-slate-800 mb-1">The Tracking System</h4>
+                  <p className="text-gray-600 text-sm">That keeps follow-ups on track</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <p className="text-lg font-semibold text-center text-slate-700">
             They didn&apos;t reinvent the wheel. They used a template that already worked.
           </p>
         </div>
       </section>
 
       {/* The Offer */}
-      <section id="offer" className="py-16 px-4 bg-black text-white">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+      <section id="what-you-get" className="py-20 px-4 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
             Introducing: The ProBiz FastStart Kit
           </h2>
-          <p className="text-lg mb-8 text-gray-300 text-center">
+          <p className="text-lg mb-4 text-orange-300 text-center font-medium">
             This isn&apos;t theory. This isn&apos;t &quot;motivational advice.&quot;
           </p>
-          <p className="text-lg mb-12 text-gray-300 text-center">
-            This is the <strong>actual recruiting system</strong> that top ProBiz members used to get their first contractors fast—including the exact words they used, the templates they copied, and the sequence they followed.
+          <p className="text-lg mb-12 text-gray-300 text-center max-w-3xl mx-auto">
+            This is the <strong className="text-white">actual recruiting system</strong> that top ProBiz members used to get their first contractors fast—including the exact words they used, the templates they copied, and the sequence they followed.
           </p>
 
-          <h3 className="text-2xl font-bold mb-8 text-center">Here&apos;s What You Get:</h3>
+          <h3 className="text-2xl font-bold mb-8 text-center text-orange-400">Here&apos;s What You Get:</h3>
 
-          <div className="space-y-6 mb-12">
-            <div className="bg-gray-900 p-6 rounded-lg">
-              <h4 className="text-xl font-bold mb-2 text-yellow-400">📧 The Contractor Recruitment Email Swipe File</h4>
-              <ul className="text-gray-300 space-y-1">
-                <li>• 10 pre-written emails (just copy, paste, and send)</li>
-                <li>• Cold outreach templates that don&apos;t sound spammy</li>
-                <li>• Follow-up sequences for non-responders</li>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 hover:bg-white/20 transition-all">
+              <div className="text-4xl mb-4">📧</div>
+              <h4 className="text-xl font-bold mb-3 text-orange-300">Email Swipe File</h4>
+              <ul className="text-gray-300 space-y-2 text-sm">
+                <li>• 10 pre-written emails</li>
+                <li>• Cold outreach templates</li>
+                <li>• Follow-up sequences</li>
                 <li>• Subject lines that get opened</li>
               </ul>
             </div>
 
-            <div className="bg-gray-900 p-6 rounded-lg">
-              <h4 className="text-xl font-bold mb-2 text-yellow-400">🎯 The &quot;First Conversation&quot; Script</h4>
-              <ul className="text-gray-300 space-y-1">
-                <li>• Word-for-word what to say when a contractor shows interest</li>
-                <li>• How to explain ProBiz in 30 seconds (without confusion)</li>
-                <li>• Objection handlers for &quot;I need to think about it&quot;</li>
-                <li>• The exact moment to ask for the signup</li>
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 hover:bg-white/20 transition-all">
+              <div className="text-4xl mb-4">🎯</div>
+              <h4 className="text-xl font-bold mb-3 text-orange-300">Conversation Script</h4>
+              <ul className="text-gray-300 space-y-2 text-sm">
+                <li>• Word-for-word script</li>
+                <li>• 30-second ProBiz explanation</li>
+                <li>• Objection handlers</li>
+                <li>• Perfect closing timing</li>
               </ul>
             </div>
 
-            <div className="bg-gray-900 p-6 rounded-lg">
-              <h4 className="text-xl font-bold mb-2 text-yellow-400">📱 Social Media Content Pack</h4>
-              <ul className="text-gray-300 space-y-1">
-                <li>• 20 done-for-you post templates</li>
-                <li>• Graphics you can customize in Canva (free)</li>
-                <li>• Hashtag sets for local business reach</li>
-                <li>• Posting schedule for maximum engagement</li>
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 hover:bg-white/20 transition-all">
+              <div className="text-4xl mb-4">📱</div>
+              <h4 className="text-xl font-bold mb-3 text-orange-300">Social Media Pack</h4>
+              <ul className="text-gray-300 space-y-2 text-sm">
+                <li>• 20 post templates</li>
+                <li>• Canva graphics included</li>
+                <li>• Hashtag sets</li>
+                <li>• Posting schedule</li>
               </ul>
             </div>
 
-            <div className="bg-gray-900 p-6 rounded-lg">
-              <h4 className="text-xl font-bold mb-2 text-yellow-400">📊 The Contractor Tracker</h4>
-              <ul className="text-gray-300 space-y-1">
-                <li>• Google Sheets template (free to use)</li>
-                <li>• Track every prospect from first contact to signup</li>
-                <li>• Never lose a lead in your inbox again</li>
-                <li>• See your pipeline at a glance</li>
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 hover:bg-white/20 transition-all">
+              <div className="text-4xl mb-4">📊</div>
+              <h4 className="text-xl font-bold mb-3 text-orange-300">Contractor Tracker</h4>
+              <ul className="text-gray-300 space-y-2 text-sm">
+                <li>• Google Sheets template</li>
+                <li>• Track all prospects</li>
+                <li>• Never lose a lead</li>
+                <li>• Pipeline visualization</li>
               </ul>
             </div>
 
-            <div className="bg-gray-900 p-6 rounded-lg">
-              <h4 className="text-xl font-bold mb-2 text-yellow-400">📖 The 30-Day FastStart Roadmap</h4>
-              <ul className="text-gray-300 space-y-1">
-                <li>• Day-by-day action plan for your first month</li>
-                <li>• Exactly what to do each day (no guessing)</li>
-                <li>• Milestone checklists to keep you on track</li>
-                <li>• &quot;Emergency&quot; tactics if you fall behind</li>
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 hover:bg-white/20 transition-all">
+              <div className="text-4xl mb-4">📖</div>
+              <h4 className="text-xl font-bold mb-3 text-orange-300">30-Day Roadmap</h4>
+              <ul className="text-gray-300 space-y-2 text-sm">
+                <li>• Day-by-day action plan</li>
+                <li>• Exactly what to do</li>
+                <li>• Milestone checklists</li>
+                <li>• Emergency tactics</li>
               </ul>
             </div>
 
-            <div className="bg-gray-900 p-6 rounded-lg">
-              <h4 className="text-xl font-bold mb-2 text-yellow-400">🎥 Quick-Start Walkthrough Video</h4>
-              <ul className="text-gray-300 space-y-1">
-                <li>• 10-minute video showing how to use every template</li>
-                <li>• Real examples from successful members</li>
-                <li>• Setup instructions for beginners</li>
-                <li>• Watch once, reference anytime</li>
+            <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20 hover:bg-white/20 transition-all">
+              <div className="text-4xl mb-4">🎥</div>
+              <h4 className="text-xl font-bold mb-3 text-orange-300">Walkthrough Video</h4>
+              <ul className="text-gray-300 space-y-2 text-sm">
+                <li>• 10-minute tutorial</li>
+                <li>• Real member examples</li>
+                <li>• Setup instructions</li>
+                <li>• Reference anytime</li>
               </ul>
             </div>
           </div>
@@ -191,248 +234,279 @@ export default function Home() {
       </section>
 
       {/* This Works Even If */}
-      <section className="py-16 px-4 bg-gray-50">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center text-slate-800">
             This Works Even If...
           </h2>
-          <div className="grid md:grid-cols-2 gap-4 mb-8">
-            <div className="flex items-center bg-white p-4 rounded shadow">
-              <span className="text-red-500 mr-3 text-2xl">✗</span>
-              <span>You&apos;ve never recruited anyone before</span>
+          <p className="text-center text-gray-600 mb-12">No experience? No network? No problem.</p>
+          
+          <div className="grid md:grid-cols-2 gap-4 mb-12">
+            <div className="flex items-center bg-red-50 p-5 rounded-xl border border-red-100">
+              <span className="text-red-500 mr-4 text-2xl">✗</span>
+              <span className="text-slate-700">You&apos;ve never recruited anyone before</span>
             </div>
-            <div className="flex items-center bg-white p-4 rounded shadow">
-              <span className="text-red-500 mr-3 text-2xl">✗</span>
-              <span>You don&apos;t have a big network</span>
+            <div className="flex items-center bg-red-50 p-5 rounded-xl border border-red-100">
+              <span className="text-red-500 mr-4 text-2xl">✗</span>
+              <span className="text-slate-700">You don&apos;t have a big network</span>
             </div>
-            <div className="flex items-center bg-white p-4 rounded shadow">
-              <span className="text-red-500 mr-3 text-2xl">✗</span>
-              <span>You&apos;re &quot;not a salesperson&quot;</span>
+            <div className="flex items-center bg-red-50 p-5 rounded-xl border border-red-100">
+              <span className="text-red-500 mr-4 text-2xl">✗</span>
+              <span className="text-slate-700">You&apos;re &quot;not a salesperson&quot;</span>
             </div>
-            <div className="flex items-center bg-white p-4 rounded shadow">
-              <span className="text-red-500 mr-3 text-2xl">✗</span>
-              <span>You&apos;ve tried and failed before</span>
+            <div className="flex items-center bg-red-50 p-5 rounded-xl border border-red-100">
+              <span className="text-red-500 mr-4 text-2xl">✗</span>
+              <span className="text-slate-700">You&apos;ve tried and failed before</span>
             </div>
-            <div className="flex items-center bg-white p-4 rounded shadow md:col-span-2">
-              <span className="text-red-500 mr-3 text-2xl">✗</span>
-              <span>You only have 30 minutes a day</span>
+            <div className="flex items-center bg-red-50 p-5 rounded-xl border border-red-100 md:col-span-2">
+              <span className="text-red-500 mr-4 text-2xl">✗</span>
+              <span className="text-slate-700">You only have 30 minutes a day</span>
             </div>
           </div>
-          <p className="text-lg text-center text-gray-700">
-            The FastStart Kit isn&apos;t about being pushy or salesy. <strong>It&apos;s about having the right words at the right time.</strong>
-          </p>
+          
+          <div className="bg-gradient-to-r from-orange-100 to-blue-100 p-8 rounded-2xl">
+            <p className="text-lg text-center text-slate-700">
+              The FastStart Kit isn&apos;t about being pushy or salesy.<br />
+              <strong className="text-orange-600 text-xl">It&apos;s about having the right words at the right time.</strong>
+            </p>
+          </div>
         </div>
       </section>
 
       {/* The Math */}
-      <section className="py-16 px-4">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
+      <section className="py-20 px-4 bg-slate-50">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-slate-800">
             The Math That Matters
           </h2>
-          <p className="text-xl mb-6 text-gray-700">
-            <strong>One contractor = $20-40/month recurring</strong>
-          </p>
-          <p className="text-lg mb-8 text-gray-700">
-            Sign just <strong>3 contractors</strong> and you&apos;ve covered the cost of this kit... <strong>every month, forever.</strong>
-          </p>
-          <p className="text-lg mb-8 text-gray-700">
-            Sign <strong>10 contractors</strong> and you&apos;re earning <strong>$200-400/month</strong> in passive income.
-          </p>
-          <div className="bg-blue-50 p-6 rounded-lg mb-8">
-            <p className="text-lg text-gray-700 mb-4">
+          
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
+            <div className="bg-white p-6 rounded-2xl shadow-lg">
+              <div className="text-4xl font-bold text-orange-500 mb-2">$20-40</div>
+              <p className="text-gray-600">Per contractor<br/>per month</p>
+            </div>
+            <div className="bg-white p-6 rounded-2xl shadow-lg">
+              <div className="text-4xl font-bold text-blue-500 mb-2">3</div>
+              <p className="text-gray-600">Contractors to<br/>cover your investment</p>
+            </div>
+            <div className="bg-white p-6 rounded-2xl shadow-lg">
+              <div className="text-4xl font-bold text-green-500 mb-2">$200-400</div>
+              <p className="text-gray-600">Monthly income<br/>with 10 contractors</p>
+            </div>
+          </div>
+
+          <div className="bg-gradient-to-r from-orange-500 to-blue-500 text-white p-8 rounded-2xl">
+            <p className="text-xl mb-4">
               <strong>The only question is: How fast do you want to get there?</strong>
             </p>
-            <p className="text-gray-600">
-              Members who &quot;figure it out on their own&quot; take 60-90 days to sign their first contractor.
-            </p>
-            <p className="text-gray-600">
-              The members who use this system? <strong>Average time to first signup: 14 days.</strong>
-            </p>
+            <div className="grid md:grid-cols-2 gap-6 mt-6">
+              <div className="bg-white/20 p-4 rounded-xl">
+                <p className="font-semibold mb-2">DIY Approach</p>
+                <p className="text-3xl font-bold">60-90 days</p>
+                <p className="text-sm opacity-80">to first contractor</p>
+              </div>
+              <div className="bg-white/30 p-4 rounded-xl border-2 border-white">
+                <p className="font-semibold mb-2">With FastStart Kit</p>
+                <p className="text-3xl font-bold">14 days</p>
+                <p className="text-sm opacity-80">average time</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Two Options */}
-      <section className="py-16 px-4 bg-gray-100">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-slate-800">
             Your Two Options
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-8 rounded-lg shadow">
-              <h3 className="text-2xl font-bold mb-4 text-gray-600">Option 1: Do It Yourself</h3>
+            <div className="bg-gray-100 p-8 rounded-2xl border-2 border-gray-200">
+              <h3 className="text-2xl font-bold mb-4 text-gray-500">Option 1: Do It Yourself</h3>
               <ul className="space-y-3 text-gray-600 mb-6">
-                <li>• Spend weeks testing what works</li>
-                <li>• Write emails from scratch</li>
-                <li>• Figure out the &quot;right&quot; way to approach contractors</li>
-                <li>• Learn from trial and error</li>
+                <li className="flex items-start"><span className="text-red-500 mr-2">•</span> Spend weeks testing what works</li>
+                <li className="flex items-start"><span className="text-red-500 mr-2">•</span> Write emails from scratch</li>
+                <li className="flex items-start"><span className="text-red-500 mr-2">•</span> Figure out the &quot;right&quot; way to approach contractors</li>
+                <li className="flex items-start"><span className="text-red-500 mr-2">•</span> Learn from trial and error</li>
               </ul>
-              <p className="font-semibold text-red-600">
-                Time to first contractor: 60-90 days (if ever)
-              </p>
+              <div className="bg-red-100 p-4 rounded-xl">
+                <p className="font-semibold text-red-600">
+                  Time to first contractor:<br/>
+                  <span className="text-2xl">60-90 days</span> (if ever)
+                </p>
+              </div>
             </div>
-            <div className="bg-black text-white p-8 rounded-lg shadow">
-              <h3 className="text-2xl font-bold mb-4 text-yellow-400">Option 2: Use the FastStart Kit</h3>
+            <div className="bg-gradient-to-br from-slate-900 to-slate-800 text-white p-8 rounded-2xl shadow-2xl border-2 border-orange-500">
+              <h3 className="text-2xl font-bold mb-4 text-orange-400">Option 2: FastStart Kit</h3>
               <ul className="space-y-3 text-gray-300 mb-6">
-                <li>• Start recruiting today with proven templates</li>
-                <li>• Send emails that actually get responses</li>
-                <li>• Know exactly what to say in every conversation</li>
-                <li>• Follow a system that&apos;s already worked</li>
+                <li className="flex items-start"><span className="text-green-400 mr-2">✓</span> Start recruiting today with proven templates</li>
+                <li className="flex items-start"><span className="text-green-400 mr-2">✓</span> Send emails that actually get responses</li>
+                <li className="flex items-start"><span className="text-green-400 mr-2">✓</span> Know exactly what to say in every conversation</li>
+                <li className="flex items-start"><span className="text-green-400 mr-2">✓</span> Follow a system that&apos;s already worked</li>
               </ul>
-              <p className="font-semibold text-green-400">
-                Time to first contractor: 14 days average
-              </p>
+              <div className="bg-green-500/20 p-4 rounded-xl border border-green-500">
+                <p className="font-semibold text-green-400">
+                  Time to first contractor:<br/>
+                  <span className="text-2xl text-white">14 days</span> average
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
       {/* Guarantee */}
-      <section className="py-16 px-4">
+      <section id="guarantee" className="py-20 px-4 bg-gradient-to-br from-green-50 to-blue-50">
         <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8">
+          <div className="text-6xl mb-6">🛡️</div>
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-slate-800">
             30-Day &quot;First Contractor&quot; Guarantee
           </h2>
-          <p className="text-lg mb-6 text-gray-700">
-            Here&apos;s my promise:
-          </p>
-          <p className="text-xl mb-8 text-gray-800 font-semibold">
-            Use the FastStart Kit for 30 days. Follow the system. Send the emails. Have the conversations.
-          </p>
-          <p className="text-lg mb-8 text-gray-700">
-            If you don&apos;t sign at least <strong>one contractor</strong> in 30 days, I&apos;ll refund every penny.
-          </p>
-          <p className="text-lg mb-8 text-gray-600">
-            No hoops. No &quot;prove you tried.&quot; Just email me and I&apos;ll send your $37 back.
-          </p>
-          <p className="text-lg text-gray-700">
+          <div className="bg-white p-8 rounded-2xl shadow-lg mb-8">
+            <p className="text-lg mb-6 text-slate-700">
+              Here&apos;s my promise:
+            </p>
+            <p className="text-xl mb-6 text-slate-800 font-semibold">
+              Use the FastStart Kit for 30 days. Follow the system. Send the emails. Have the conversations.
+            </p>
+            <div className="bg-orange-100 p-6 rounded-xl mb-6">
+              <p className="text-lg text-slate-700">
+                If you don&apos;t sign at least <strong className="text-orange-600 text-xl">one contractor</strong> in 30 days, I&apos;ll refund every penny.
+              </p>
+            </div>
+            <p className="text-gray-600">
+              No hoops. No &quot;prove you tried.&quot; Just email me and I&apos;ll send your $37 back.
+            </p>
+          </div>
+          <p className="text-lg text-slate-700">
             <strong>Why can I offer this?</strong>
           </p>
-          <p className="text-lg text-gray-700">
+          <p className="text-lg text-slate-600">
             Because when you use these templates, signing your first contractor isn&apos;t a matter of &quot;if&quot;—it&apos;s a matter of &quot;when.&quot;
           </p>
         </div>
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 px-4 bg-red-600 text-white">
+      <section id="offer" className="py-20 px-4 bg-gradient-to-br from-orange-500 via-orange-600 to-red-600 text-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
-            This Is a Limited Launch Price
+            Limited Launch Price
           </h2>
-          <p className="text-xl mb-8">
+          <p className="text-xl mb-4 opacity-90">
             The FastStart Kit will eventually sell for <strong>$67</strong>.
           </p>
-          <p className="text-lg mb-8">
-            But since you&apos;re seeing this during the initial launch, you can get it for just:
+          <p className="text-lg mb-8 opacity-90">
+            But during this initial launch:
           </p>
-          <div className="text-6xl md:text-7xl font-bold mb-8">
-            $37
+          <div className="bg-white/20 backdrop-blur-sm p-8 rounded-3xl mb-8 inline-block">
+            <div className="text-6xl md:text-8xl font-bold mb-2">$37</div>
+            <p className="text-lg opacity-80">One-time payment</p>
           </div>
           <p className="text-lg mb-8">
-            <strong>That&apos;s less than the commission from 2 contractors.</strong>
+            <strong>Less than the commission from 2 contractors.</strong>
           </p>
-          <p className="text-lg mb-12">
-            And those 2 contractors will pay you $40-80/month... <strong>every month... for as long as they stay in ProBiz.</strong>
+          <p className="text-lg mb-12 opacity-90">
+            Those 2 contractors will pay you $40-80/month... <strong>every month... for as long as they stay in ProBiz.</strong>
           </p>
           <a 
             href="#" 
-            className="inline-block bg-white text-red-600 hover:bg-gray-100 font-bold py-4 px-8 rounded-lg text-xl uppercase tracking-wide transition-colors mb-4"
+            className="inline-block bg-white text-orange-600 hover:bg-gray-100 font-bold py-5 px-10 rounded-xl text-xl shadow-2xl hover:shadow-xl transition-all transform hover:-translate-y-1 mb-6"
           >
-            YES! Give Me The FastStart Kit — $37
+            Get The FastStart Kit — $37
           </a>
-          <div className="flex justify-center space-x-4 text-sm">
-            <span>🔒 Secure checkout</span>
-            <span>💾 Instant download</span>
-            <span>🛡️ 30-day guarantee</span>
+          <div className="flex justify-center space-x-6 text-sm">
+            <span className="flex items-center"><span className="mr-2">🔒</span> Secure checkout</span>
+            <span className="flex items-center"><span className="mr-2">💾</span> Instant download</span>
+            <span className="flex items-center"><span className="mr-2">🛡️</span> 30-day guarantee</span>
           </div>
         </div>
       </section>
 
       {/* What Happens Next */}
-      <section className="py-16 px-4 bg-gray-50">
+      <section className="py-20 px-4 bg-slate-50">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-slate-800">
             What Happens Next
           </h2>
-          <ol className="space-y-4 mb-8">
-            <li className="flex items-start">
-              <span className="bg-black text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">1</span>
-              <span>Click the button and complete your purchase</span>
-            </li>
-            <li className="flex items-start">
-              <span className="bg-black text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">2</span>
-              <span>Get instant access to all templates, scripts, and the video</span>
-            </li>
-            <li className="flex items-start">
-              <span className="bg-black text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">3</span>
-              <span>Download the 30-Day Roadmap and start Day 1 today</span>
-            </li>
-            <li className="flex items-start">
-              <span className="bg-black text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">4</span>
-              <span>Send your first email using the swipe file (takes 5 minutes)</span>
-            </li>
-            <li className="flex items-start">
-              <span className="bg-black text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 flex-shrink-0">5</span>
-              <span>Watch your first contractor signup within 14 days</span>
-            </li>
-          </ol>
+          <div className="space-y-4">
+            <div className="flex items-center bg-white p-5 rounded-xl shadow-sm">
+              <span className="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center mr-5 flex-shrink-0 font-bold">1</span>
+              <span className="text-slate-700">Click the button and complete your purchase</span>
+            </div>
+            <div className="flex items-center bg-white p-5 rounded-xl shadow-sm">
+              <span className="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center mr-5 flex-shrink-0 font-bold">2</span>
+              <span className="text-slate-700">Get instant access to all templates, scripts, and the video</span>
+            </div>
+            <div className="flex items-center bg-white p-5 rounded-xl shadow-sm">
+              <span className="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center mr-5 flex-shrink-0 font-bold">3</span>
+              <span className="text-slate-700">Download the 30-Day Roadmap and start Day 1 today</span>
+            </div>
+            <div className="flex items-center bg-white p-5 rounded-xl shadow-sm">
+              <span className="bg-orange-500 text-white rounded-full w-10 h-10 flex items-center justify-center mr-5 flex-shrink-0 font-bold">4</span>
+              <span className="text-slate-700">Send your first email using the swipe file (takes 5 minutes)</span>
+            </div>
+            <div className="flex items-center bg-gradient-to-r from-green-500 to-green-600 text-white p-5 rounded-xl shadow-lg">
+              <span className="bg-white text-green-600 rounded-full w-10 h-10 flex items-center justify-center mr-5 flex-shrink-0 font-bold">5</span>
+              <span className="font-semibold">Watch your first contractor signup within 14 days!</span>
+            </div>
+          </div>
         </div>
       </section>
 
       {/* FAQ */}
-      <section className="py-16 px-4">
+      <section className="py-20 px-4 bg-white">
         <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center text-slate-800">
             Questions You Might Have
           </h2>
-          <div className="space-y-6">
-            <div>
-              <h3 className="font-bold text-lg mb-2">Will this work with my ProBiz membership level?</h3>
-              <p className="text-gray-700">Yes. Whether you&apos;re on the $99 Founders plan or the $199 Full Member plan, these templates work the same way.</p>
+          <div className="space-y-4">
+            <div className="bg-slate-50 p-6 rounded-xl">
+              <h3 className="font-bold text-lg mb-2 text-slate-800">Will this work with my ProBiz membership level?</h3>
+              <p className="text-gray-600">Yes. Whether you&apos;re on the $99 Founders plan or the $199 Full Member plan, these templates work the same way.</p>
             </div>
-            <div>
-              <h3 className="font-bold text-lg mb-2">Do I need any special software?</h3>
-              <p className="text-gray-700">Nope. Everything works with free tools: Gmail, Google Sheets, and Canva (free version).</p>
+            <div className="bg-slate-50 p-6 rounded-xl">
+              <h3 className="font-bold text-lg mb-2 text-slate-800">Do I need any special software?</h3>
+              <p className="text-gray-600">Nope. Everything works with free tools: Gmail, Google Sheets, and Canva (free version).</p>
             </div>
-            <div>
-              <h3 className="font-bold text-lg mb-2">What if I&apos;m not good at sales?</h3>
-              <p className="text-gray-700">Perfect. These templates are designed for people who &quot;aren&apos;t salespeople.&quot; They&apos;re conversational, helpful, and non-pushy.</p>
+            <div className="bg-slate-50 p-6 rounded-xl">
+              <h3 className="font-bold text-lg mb-2 text-slate-800">What if I&apos;m not good at sales?</h3>
+              <p className="text-gray-600">Perfect. These templates are designed for people who &quot;aren&apos;t salespeople.&quot; They&apos;re conversational, helpful, and non-pushy.</p>
             </div>
-            <div>
-              <h3 className="font-bold text-lg mb-2">How fast will I get access?</h3>
-              <p className="text-gray-700">Instant. As soon as you complete checkout, you&apos;ll get a download link with all files.</p>
+            <div className="bg-slate-50 p-6 rounded-xl">
+              <h3 className="font-bold text-lg mb-2 text-slate-800">How fast will I get access?</h3>
+              <p className="text-gray-600">Instant. As soon as you complete checkout, you&apos;ll get a download link with all files.</p>
             </div>
-            <div>
-              <h3 className="font-bold text-lg mb-2">What&apos;s your refund policy?</h3>
-              <p className="text-gray-700">30-day guarantee. Use the kit for 30 days. If you don&apos;t sign at least one contractor, I&apos;ll refund every penny.</p>
+            <div className="bg-slate-50 p-6 rounded-xl">
+              <h3 className="font-bold text-lg mb-2 text-slate-800">What&apos;s your refund policy?</h3>
+              <p className="text-gray-600">30-day guarantee. Use the kit for 30 days. If you don&apos;t sign at least one contractor, I&apos;ll refund every penny.</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* Final CTA 2 */}
-      <section className="py-16 px-4 bg-black text-white">
+      <section className="py-20 px-4 bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
             The Window Is Open (For Now)
           </h2>
-          <p className="text-lg mb-8 text-gray-300">
+          <p className="text-lg mb-6 text-gray-300">
             Every day you wait is a day you&apos;re not earning.
           </p>
-          <p className="text-lg mb-8 text-gray-300">
+          <p className="text-lg mb-6 text-gray-300">
             The contractors you could have recruited today are still out there... but someone else might get to them first.
           </p>
-          <p className="text-xl mb-8 text-white font-semibold">
+          <p className="text-xl mb-6 text-orange-400 font-semibold">
             The FastStart Kit gives you the system to move fast.
           </p>
-          <p className="text-lg mb-12 text-gray-300">
+          <p className="text-lg mb-10 text-gray-300">
             But only if you actually use it.
           </p>
           <a 
             href="#" 
-            className="inline-block bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-lg text-xl uppercase tracking-wide transition-colors mb-4"
+            className="inline-block bg-orange-500 hover:bg-orange-600 text-white font-bold py-5 px-10 rounded-xl text-xl shadow-2xl hover:shadow-xl transition-all transform hover:-translate-y-1 mb-4"
           >
             Get The FastStart Kit — $37
           </a>
@@ -443,7 +517,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 px-4 bg-gray-900 text-gray-400 text-center text-sm">
+      <footer className="py-8 px-4 bg-slate-950 text-gray-400 text-center text-sm">
         <p>© 2026 ProBiz FastStart Kit. All rights reserved.</p>
         <p className="mt-2">Questions? Email support@probizfaststart.com</p>
       </footer>
